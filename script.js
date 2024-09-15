@@ -486,8 +486,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('random-btn').addEventListener('click', () => {
         const randomIndex = Math.floor(Math.random() * categories.length);
         const category = categories[randomIndex];
-        const randomNestedIndex = Math.floor(Math.random() * category.length);
-        resultDiv.textContent = category[randomNestedIndex]});
+        setRandomResult(category)});
 
     // Timer functionality
     const startButton = document.getElementById('start-timer');
