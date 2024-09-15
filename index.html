@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Transition</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>Hello, world!</h1>
+    <div id="main-screen" class="screen">
+        <div class="grid-container">
+            <button class="nav-button" data-message="Message 1">Button 1</button>
+            <button class="nav-button" data-message="Message 2">Button 2</button>
+            <button class="nav-button" data-message="Message 3">Button 3</button>
+            <button class="nav-button" data-message="Message 4">Button 4</button>
+            <button class="nav-button" data-message="Message 5">Button 5</button>
+            <button class="nav-button" data-message="Message 6">Button 6</button>
+            <button class="nav-button" data-message="Message 7">Button 7</button>
+            <button class="nav-button" data-message="Message 8">Button 8</button>
+            <button class="nav-button" data-message="Message 9">Button 9</button>
+            <button class="nav-button" data-message="Message 10">Button 10</button>
+        </div>
+    </div>
+
+    <div id="message-screen" class="screen hidden">
+        <p id="message-text"></p>
+        <div class="button-container">
+            <button id="back-button">Back</button>
+            <button id="new-button">New Button</button>
+        </div>
+    </div>
 </body>
 </html>
