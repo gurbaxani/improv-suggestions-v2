@@ -1,0 +1,21 @@
+.display-result {
+  margin-top: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.timer-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.timer-display {
+  font-size: 1.5em;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nav-button {
+  margin: 5px;
+}
