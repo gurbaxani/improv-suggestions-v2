@@ -5,10 +5,6 @@
 }
 
 .timer-container {
-  /* position: fixed; */
-  /* bottom: 20px; */
-  /* left: 50%;
-  transform: translateX(-50%); */
   display: flex;
   align-items: center;
 }
@@ -21,17 +17,22 @@
 
 .nav-button {
   margin: 5px;
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  transition: background-color 0.3s ease;
 
 }
 
 .timer-container .nav-button {
   width: 100px;
   height: 40px;
-  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 #result {
-  cursor: pointer; /* Change cursor to indicate it's clickable */
+  cursor: pointer;
   height: 10em;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
