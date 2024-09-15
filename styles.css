@@ -39,3 +39,9 @@
   text-transform: capitalize;
   text-align: center;
 }
+
+/* Keep this at the bottom to hide the Flash of Unstyled Content */
+html {
+  visibility: visible;
+  opacity: 1;
+}
