@@ -21,5 +21,12 @@
 
 .nav-button {
   margin: 5px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+
 }
 
+.timer-container .nav-button {
+  width: 100px;
+  height: 40px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
