@@ -40,6 +40,11 @@
   text-align: center;
 }
 
+.help-link {
+  text-align: end;
+  text-decoration: none;
+}
+
 /* Keep this at the bottom to hide the Flash of Unstyled Content */
 html {
   visibility: visible;
