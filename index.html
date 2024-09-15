@@ -11,10 +11,28 @@
             font-size: 1.5em;
             font-weight: bold;
         }
+        .timer-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .timer-display {
+            font-size: 1.5em;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .nav-button {
+            margin: 5px;
+        }
     </style>
 </head>
 <body>
-    <h1>Improv Suggestions</h1>
+    <h1>Improv Practice</h1>
+    <div class="timer-container">
+        <button id="start-timer" class="nav-button">🚀 Start</button>
+        <div id="timer-display" class="timer-display">00:00</div>
+        <button id="stop-timer" class="nav-button">✋ Stop</button>
+    </div>
     <div id="main-screen" class="screen">
         <p>Give me a random...</p>
         <div class="grid-container">
@@ -32,5 +50,5 @@
         <div id="result" class="display-result">Click a button to get a suggestion</div>    
     </div>
     <script src="script.js"></script>
-    </body>
+</body>
 </html>
