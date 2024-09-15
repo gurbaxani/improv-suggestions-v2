@@ -5,24 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Improv Suggestions Generator 2</title>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <style>
+        .display-result {
+            margin-top: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
+    <h1>Improv Suggestions</h1>
     <div id="main-screen" class="screen">
-        <h1>Improv Suggestions</h1>
         <p>Give me a random...</p>
         <div class="grid-container">
-            <button class="nav-button">📦 Object</button>
-            <button class="nav-button">💞 Relationship</button>
-            <button class="nav-button">📍 Location</button>
-            <button class="nav-button">👔 Occupation</button>
-            <button class="nav-button">🅰️ Alphabet</button>
-            <button class="nav-button">🗣️ Phrase</button>
-            <button class="nav-button">😊 Emotion</button>
-            <button class="nav-button">🎬 Genre</button>
-            <button class="nav-button">🤌 Quirk</button>
-            <button class="nav-button"">🦸 Superpower</button>
+            <button id="object-btn" class="nav-button">📦 Object</button>
+            <button id="relationship-btn" class="nav-button">💞 Relationship</button>
+            <button id="location-btn" class="nav-button">📍 Location</button>
+            <button id="occupation-btn" class="nav-button">👔 Occupation</button>
+            <button id="alphabet-btn" class="nav-button">🅰️ Alphabet</button>
+            <button id="phrase-btn" class="nav-button">🗣️ Phrase</button>
+            <button id="emotion-btn" class="nav-button">😊 Emotion</button>
+            <button id="genre-btn" class="nav-button">🎬 Genre</button>
+            <button id="quirk-btn" class="nav-button">🤌 Quirk</button>
+            <button id="superpower-btn" class="nav-button">🦸 Superpower</button>
         </div>
-        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur harum possimus quod dolorem iste aperiam deserunt, voluptas nam eaque placeat?</h2>
+        <div id="result" class="display-result">Click a button to get a suggestion</div>    
     </div>
-</body>
+    <script src="script.js"></script>
+    </body>
 </html>
