@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const bellSound = new Audio('sounds/bell.mp3'); // Update the path as needed
 
     resultDiv.addEventListener('click', function() {
-        bellSound.currentTime = 0; // Restart the audio from the beginning
+        bellSound.currentTime = 0.5; // Restart the audio from the beginning
         bellSound.play(); // Play the sound effect
     });
 
