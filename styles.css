@@ -30,3 +30,7 @@
   height: 40px;
   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
+
+#result {
+  cursor: pointer; /* Change cursor to indicate it's clickable */
+}

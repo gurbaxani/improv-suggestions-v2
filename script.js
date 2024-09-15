@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Elements for random suggestions
+    // Elements for random suggestions    
     const resultDiv = document.getElementById('result');
     const objects = ['Book', 'Chair', 'Laptop', 'Pen', 'Phone', 'Sock', 'Table', 'Umbrella', 'Wallet', 'Watch'];
     const relationships = ['Friend', 'Parent', 'Sibling', 'Colleague', 'Neighbor', 'Partner', 'Mentor', 'Student', 'Boss', 'Customer'];
@@ -79,4 +79,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Initial display update for the timer
     updateDisplay();
+
+    // Add sound effect functionality
+    const bellSound = new Audio('sounds/bell.mp3'); // Update the path as needed
+
+    resultDiv.addEventListener('click', function() {
+        bellSound.currentTime = 0; // Restart the audio from the beginning
+        bellSound.play(); // Play the sound effect
+    });
+
+    const buzzerSound = new Audio('sounds/buzzer.mp3');
+
+    timerDisplay.addEventListener('click', function() {
+        buzzerSound.currentTime = 0;
+        buzzerSound.play();
+    });
+
+    
 });
