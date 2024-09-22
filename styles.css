@@ -41,6 +41,9 @@
 }
 
 .help-link {
+  position: fixed;
+  right: 20px;
+  top: 20px;
   text-align: end;
   text-decoration: none;
 }

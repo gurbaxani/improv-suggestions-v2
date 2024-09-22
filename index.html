@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- HTML is hidden until CSS loads to hide the Flash of Unstyled Content -->
-    <style>html{visibility: hidden;opacity:0;}</style>
+    <style>
+        html {
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Improv Practice Tools</title>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div id="main-screen" class="screen">
-        <p class="help-link"><a href="/about" >⚙️</a></p>
-        <p>Get a random...</p>
+
+        <p>Get a random...<span class="help-link"><a href="/about">ℹ️</a></span></p>
+
         <div class="grid-container">
             <button id="object-btn" class="nav-button">📦 Object</button>
             <button id="relationship-btn" class="nav-button">💞 Relationship</button>
@@ -28,7 +36,7 @@
             <button id="superpower-btn" class="nav-button">🦸 Superpower</button>
             <button id="random-btn" class="nav-button">🎲</button>
         </div>
-        <div id="result" class="display-result notice">Click a button to get a suggestion</div>    
+        <div id="result" class="display-result notice">Click a button to get a suggestion</div>
         <div class="timer-container">
             <button id="start-timer" class="nav-button">🚀 Start</button>
             <div id="timer-display" class="timer-display">00:00</div>
@@ -37,4 +45,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
